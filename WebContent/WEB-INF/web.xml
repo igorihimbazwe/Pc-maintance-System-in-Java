@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+    id="WebApp_ID" version="4.0">
+    
+    <display-name>PC Maintenance System</display-name>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.LoginServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RequestServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.RequestServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/request</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateRequestStatusServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.UpdateRequestStatusServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateRequestStatusServlet</servlet-name>
+        <url-pattern>/updateRequestStatus</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>PCServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.PCServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>PCServlet</servlet-name>
+        <url-pattern>/pc</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdatePCStatusServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.UpdatePCStatusServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdatePCStatusServlet</servlet-name>
+        <url-pattern>/updatePCStatus</url-pattern>
+    </servlet-mapping>
+</web-app> 
